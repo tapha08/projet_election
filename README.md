@@ -16,3 +16,18 @@ apres avoir telecharger tout cela dans votre machine passons à l'etape de demar
 4-Ouvrer le frontend angular dans Vs-code et demarrer le serveur en faisant le meme procede mais en tapant la commande "ng serve"
 5-Une fois les deux serveurs demarrer rendez vous dans votre navigateur (chrome de preference) et saisissez l'url suivant:
  http://localhost:4200
+ 
+ NB: 
+ Une fois dans la plateforme, le formulaire d'inscription qui se trouve dans la  page d'accueil permettant ainsi l'inscription d'un electeur dans le fichier electoral,
+ possede un champ nommé "commune" ou l'electeur dois y rensigner saa commune. Ce champ n'accepte que les données fournies dans notre base de données.
+ les communes fournies dans notre base de données à titre d'exemple sont:
+  -Fatick
+  -Grand Dakar
+  -Ouakam
+  -Plateau
+  -Pout 
+  -Saint Louis
+  -Thies Est
+  -Thies Nord
+  -Thies Ouest
+  -Ziguinchor
