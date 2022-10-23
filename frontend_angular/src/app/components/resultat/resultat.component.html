@@ -1,0 +1,43 @@
+<body>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-light" style="background-color: teal;">
+    <a href="#" class="navbar-brand mb-0 h1"><img class="d-inline-block align-top"src="../assets/img/Blason-Senegal.jpg" width="30" height="30"/> KaayVote</a>
+    <button
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    class="navbar-toggler"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a href="/" class="nav-link active">Accueil</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s6 m4" *ngFor="let voix of votes">
+          <div class="card" style="width: 20rem;" appBorderCard>
+            <img class="card-img-top" style="height: 200px;" src="../../../assets/img/{{voix.identification}}" alt="{{voix.prenom}}">
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">{{voix.prenom}}</li>
+                <li class="list-group-item">{{voix.nom}}</li>
+                <li class="list-group-item">{{voix.nomparti}}</li>
+                <li class="list-group-item">
+                  nombre de voix: {{voix.voix}}
+              </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>

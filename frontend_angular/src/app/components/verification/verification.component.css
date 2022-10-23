@@ -1,0 +1,29 @@
+body{
+  background-image: url('../../../assets/img/presidence_19.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.error-msg{
+    font-size: 13px;
+    color: red;
+  }
+
+  .success-msg{
+    font-size: 13px;
+    color: lightgreen;
+  }
+
+  .navbar-brand{
+    color: yellow;
+   }
+   #div1{
+    margin-top: 300px;
+    margin-left: 500px;
+  }
+
+  #div2{
+
+    margin-left: 500px;
+  }

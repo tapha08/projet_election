@@ -1,0 +1,66 @@
+
+
+body{
+  background-image: url('../../../assets/img/vert.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+.map{
+  overflow: hidden;
+
+}
+
+
+.map__image{
+  width: 50%;
+  float: left;
+}
+
+.map__image path{
+  fill: #a4ced2;
+  stroke: #fff;
+  stroke-width: 1px;
+  transition: fill 0.4s;
+}
+
+.map__image path:hover{
+  fill: #3538d2;
+
+}
+
+.map_image .is-active path{
+  fill: #3538d2;
+}
+
+.map__list{
+  float: right;
+  width: 50%;
+  margin-top: 60px;
+}
+
+.map__list a{
+  color:aliceblue;
+  text-decoration:none;
+  transition: color 0.3s;
+}
+
+
+.navbar-brand{
+  color: yellow;
+ }
+
+ #titre{
+  margin-top: 70px;
+  color: aliceblue;
+ }
+
+ .title{
+  text-align: center;
+ }
+
+ .title1{
+  color: aliceblue;
+ }

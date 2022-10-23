@@ -1,0 +1,81 @@
+<nav class="navbar fixed-top navbar-expand-sm navbar-light" style="background-color: teal;">
+  <a href="#" class="navbar-brand mb-0 h1"><img class="d-inline-block align-top"src="../assets/img/Blason-Senegal.jpg" width="30" height="30"/> KaayVote</a>
+  <button
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#navbarNav"
+  class="navbar-toggler"
+  aria-controls="navbarNav"
+  aria-expanded="false"
+  aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a href="/" class="nav-link active">Accueil</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<section class="login-page">
+  <div class="container">
+    <!--div class="card login-card"-->
+      <!--div class="card-body"-->
+        <form #loginForm="ngForm"  (ngSubmit)="login()">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="title">Connexion</h2>
+            </div>
+          </div>
+            <div class="row" id="div1">
+              <div class="col-lg-12 form-group" id="cni">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back-fill" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"/>
+                </svg>
+                <i class="bi bi-credit-card-2-back-fill"></i>
+                <label for="NIN">NIN</label>
+                <input  class="form-control" type="text" placeholder="Votre NIN" name="id" #id="ngModel" [(ngModel)]="user.id" required >
+
+                <div class="error-msg" *ngIf="(id.touched || loginForm.submitted)  && id.errors?.['required']">
+                  Le champ NIN est requis
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row" id="div2">
+              <div class="col-lg-12 form-group" id="pwd" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
+                    <path d="M7 6a1 1 0 0 1 2 0v1H7V6z"/>
+                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
+                  </svg>
+                  <i class="bi bi-file-lock2-fill"></i>
+                <label for="Mot De Passe">Mot De Passe</label>
+                <input id="password" class="form-control" type="password" placeholder="Votre Mot De Passe" name="password" #password="ngModel" [(ngModel)]="user.password" required >
+
+                <div class="error-msg" *ngIf="(password.touched || loginForm.submitted)  && password.errors?.['required']">
+                  Le champ mot de passe est requis
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row" id="div3">
+              <div class="col-lg-12 ">
+                <button class="btn btn-info custom-btn" type="submit" [disabled]="!loginForm.valid" >Se Connecter</button>
+              </div>
+
+              <p class="mt-5 mb-3 text-muted " >&copy; Election Presidentielle 2022</p>
+
+            </div>
+            <div id="erreur" class="error-msg" *ngIf="(loginForm.submitted) && data.data == 'faux' ">
+              Erreur: NIN ou Mot De Passe Incorrect
+            </div>
+        </form>
+      </div>
+    <!--/div-->
+  <!--/div-->
+</section>
