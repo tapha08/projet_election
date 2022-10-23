@@ -5,13 +5,14 @@ Pour pouvoir bien demarrer ce projet dans votre ordinateur il faut au prealable:
 1- telecharger Node js et Npm pour pouvoir utiliser angular
 2- telecharger composer pour laravel
 3-telecharger xampp ou wamp (ca depend de votre systeme et votre preference)
-4-telecharger vd code 
+4-telecharger vs code ou aute similaire
 
 apres avoir telecharger tout cela dans votre machine passons à l'etape de demarrage:
 
 1-demarrer xampp ou wamp
-2-demarrer le backend laravel en tapant la commande "php artisan serve" dans le terminal de vs code ou 
+2-Acceder a phpmyadmin et creer une nouvelle base de donnée nommée election et ensuite importer le fichier election.sql ci-joint
+3-Ouvrer le backend laravel dans Vs-code et demarrer le serveur en tapant la commande "php artisan serve" dans le terminal de vs-code ou 
   dans le terminal de votre ordinateur en vous placant dans le repertoire du dossier laravel 
-3-demarrer le frontend angular en faisant le meme procede mais en tapant la commande "ng serve"
-4-Une fois les deux serveurs demarrer rendez vous dans votre navigateur chrome de preference et saisissez l'url suivant:
+4-Ouvrer le frontend angular dans Vs-code et demarrer le serveur en faisant le meme procede mais en tapant la commande "ng serve"
+5-Une fois les deux serveurs demarrer rendez vous dans votre navigateur (chrome de preference) et saisissez l'url suivant:
  http://localhost:4200
