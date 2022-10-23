@@ -19,7 +19,7 @@ apres avoir telecharger tout cela dans votre machine passons à l'etape de demar
  
  NB: 
  Une fois dans la plateforme, le formulaire d'inscription qui se trouve dans la  page d'accueil permettant ainsi l'inscription d'un electeur dans le fichier electoral,
- possede un champ nommé "commune" ou l'electeur dois y rensigner sa commune. Ce champ n'accepte que les données fournies dans notre base de données.
+ possede un champ nommé "commune" ou l'electeur dois y renseigner sa commune. Ce champ n'accepte que les données fournies dans notre base de données.
  les communes fournies dans notre base de données à titre d'exemple sont:
   -Fatick
   -Grand Dakar
